@@ -59,13 +59,6 @@ const Content = () => {
         </div>
       </section>
 
-      <section>
-        <div className='mt-24 mb-10 text-2xl'>Projek Saya 🚀</div>
-
-        <Project />
-        <Project />
-        <Project />
-      </section>
     </div>
   )
 }
