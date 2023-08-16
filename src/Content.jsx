@@ -39,6 +39,47 @@ const Content = () => {
 
   ]
 
+  const projects = [
+    {
+      name: 'E-Kaku v2',
+      link: 'https://e-kaku.pandeglangkab.go.id',
+      description: 'Aplikasi pembuatan kartu kuning di Dinas Transmigrasi dan Ketenagakerjaan Kab. Pandeglang',
+      stack: [
+        'Laravel', 'Tailwind CSS'
+      ]
+    },
+    {
+      name: 'SIMINAW',
+      link: 'https://siminaw.pandeglangkab.go.id',
+      description: 'Aplikasi manajemen inventaris Aplikasi dan Website di Diskomsantik Kab. Pandeglang',
+      stack: [
+        'Laravel', 'Filament PHP', 'Tailwind CSS'
+      ]
+    },
+    {
+      name: 'e-Hom',
+      description: 'Elektronik Handover',
+      stack: [
+        'Codeignigter 3', , 'Tailwind CSS'
+      ]
+    },
+    {
+      name: 'REMI',
+      description: 'Penilaian Remunerasi Elektronik RS Misi Lebak',
+      stack: [
+        'Codeignigter 3', , 'Tailwind CSS'
+      ]
+    },
+    {
+      name: 'DOMI',
+      description: 'Pendaftaran Online DOMI',
+      link: 'https://domi.misilebak.com',
+      stack: [
+        'Codeignigter 3', 'Bootstrap CSS'
+      ]
+    },
+  ]
+
 
   return (
     <div className='text-green-50'>
@@ -59,6 +100,11 @@ const Content = () => {
         </div>
       </section>
 
+      <section>
+        <div className='mt-24 mb-10 text-2xl'>Projek Saya 🚀</div>
+
+        {projects.map(project => <Project name={project.name} description={project.description} link={project.link} stack={project.stack} />)}
+      </section>
     </div>
   )
 }
